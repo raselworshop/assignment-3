@@ -20,6 +20,8 @@
             colors: {
               clifford: '#da373d',
               'btn-my': '#ABEF5F',
+              'btn-my-bg': 'rgba(171, 239, 95, 0.5)',
+              'title-my': 'rgba(33, 33, 33, 1)',
             }
           }
         }
@@ -27,10 +29,11 @@
     </script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body class="font-manrope max-w-screen-xl  mx-auto">
-    <header class="max-w-sm lg:max-w-screen-xl  mx-auto">
-        <nav>
-            <div class="navbar lg:flex-row mx-auto bg-base-100 bg-gradient-to-r from-gray-50 to-gray-50">
+<body class="font-manrope">
+    <header class="lg:max-w-screen-xl bg-base-200  mx-auto">
+        <!-- navbar section -->
+        <nav class="w-full">
+            <div class="navbar lg:flex-row mx-auto bg-base-200">
                 <!-- need to update for mobile version -->
                 <div class="navbar-start">
 
@@ -59,15 +62,15 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal font-manrope px-1">
-                    <li class="hover:font-bold"><a>Home</a></li>
+                    <li class="hover:font-bold font-bold"><a>Home</a></li>
                     <li class="hover:font-bold"><a>Service</a></li>
                     <li class="hover:font-bold"><a>Portfolio</a></li>
                     <li class="hover:font-bold"><a>Blogs</a></li>
                     <li class="hover:font-bold"><a>Contact us</a></li>
                   </ul>
                 </div>
-                <div class="lg:navbar-end hidden lg:flex lg:space-x-1 bg-gradient-to-r from-gray-50 to-gray-50">
-                   <div class="flex justify-start">
+                <div class="lg:navbar-end hidden lg:flex lg:space-x-2 bg-base-200">
+                   <div class="flex justify-start space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 font-semibold p-2 bg-white rounded-full">
                         <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" clip-rule="evenodd" />
                       </svg>
@@ -85,6 +88,23 @@
                 </div>
               </div>
         </nav>
+        <!-- banner section -->
+        <div class="hero bg-base-200 my-16 min-h-screen">
+            <div class="hero-content flex-col mb-6">
+              <img
+                src="./assets/banner.png"
+                class="max-w-xl rounded-lg shadow-2xl"/>
+              <div class="flex flex-col  justify-between items-center">
+                <h1 class="text-3xl lg:text-6xl font-extrabold text-center font-manrope text-title-my mb-2 lg:mb-5">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6 mb-5 font-manrope text-center">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn btn-primary border-none bg-btn-my-bg text-black rounded-full px-36 lg:px-4 text-lg font-bold">View Details<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 p-2 rounded-full bg-btn-my text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg></button>
+              </div>
+            </div>
+          </div>
     </header>
 </body>
 </html>
