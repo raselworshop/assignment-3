@@ -11,6 +11,8 @@ module.exports = {
         'btn-my': '#ABEF5F',
         'btn-my-bg': 'rgba(171, 239, 95, 0.5)',
         'title-my': 'rgba(33, 33, 33, 1)',
+        'card-bg': '#E7C1D3',
+
       }
     },
   },

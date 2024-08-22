@@ -22,6 +22,7 @@
               'btn-my': '#ABEF5F',
               'btn-my-bg': 'rgba(171, 239, 95, 0.5)',
               'title-my': 'rgba(33, 33, 33, 1)',
+              'card-bg': '#E7C1D3',
             }
           }
         }
@@ -95,11 +96,11 @@
               </div>
         </nav> 
         <!-- banner section -->
-         <div class="lg:hero bg-base-200 my-16 min-h-screen overflow-hidden">
+         <div class="lg:hero bg-base-200 min-h-screen overflow-hidden">
             <div class="lg:hero-content flex-col mb-6">
               <img
                 src="./assets/banner.png"
-                class="lg:max-w-xl rounded-lg shadow-2xl"/>
+                class="lg:max-w-xl rounded-lg pb-5 shadow-2xl"/>
               <div class="flex flex-col  justify-between items-center">
                 <h1 class="text-2xl lg:text-6xl font-extrabold text-center font-manrope text-title-my mb-2 lg:mb-5">A barn house of this design has a <br> striking appearance</h1>
                 <p class="py-3 lg:py-6 px-3 mb-5 font-manrope text-center">
@@ -167,7 +168,78 @@
                 </div>
               </div>
         </section>
-
+        <!--our work proccess section  -->
+        <section class="container mx-auto my-14">
+            <div>
+                <div class="flex flex-col justify-between items-center mb-8 lg:mb-16">
+                    <div class="mb-4">
+                        <!-- button how we works -->
+                       <div class="flex justify-center lg:justify-start">
+                            <span class="inline-flex bg-slate-50 space-x-3 gap-2 px-2 mb-2 text-center rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                            How We Works</span>
+                       </div>
+                    </div>
+                    <!-- our works header -->
+                    <div class="flex flex-col justify-between items-center gap-2 lg:gap-4">
+                        <h1 class="font-manrope font-extrabold text-3xl lg:text-5xl text-center">Our Works Process</h1>
+                        <p class="font-manrope font-medium text-center p-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                </div>
+                <!-- our work cards -->
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                    <!-- card one -->
+                    <div class="card bg-card-bg justify-start items-start shadow-xl">
+                        <figure class="ml-8 mt-8">
+                          <img
+                            src="./assets/concept.png"
+                            alt="concept" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title font-bold">Concept</h2>
+                          <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                      </div>
+                    <!-- card 2 -->
+                    <div class="card bg-yellow-200 justify-start items-start shadow-xl">
+                        <figure class="ml-8 mt-8">
+                          <img
+                            src="./assets/concept.png"
+                            alt="concept" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title font-bold">Concept</h2>
+                          <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                      </div>
+                    <!-- card 3 -->
+                    <div class="card bg-emerald-200 justify-start items-start shadow-xl">
+                        <figure class="ml-8 mt-8">
+                          <img
+                            src="./assets/concept.png"
+                            alt="concept" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title font-bold">Concept</h2>
+                          <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                      </div>
+                    <!-- card 4 -->
+                    <div class="card bg-blue-400 justify-start items-start shadow-xl">
+                        <figure class="ml-8 mt-8">
+                          <img
+                            src="./assets/concept.png"
+                            alt="concept" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="card-title font-bold">Concept</h2>
+                          <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
      </main>
 </body>
 </html>
